@@ -444,7 +444,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Cek data akses",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -458,17 +458,17 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Cek data akse"
             ],
             "id": "8ab38f7a-3199-4e16-b244-8058adf4e007",
             "source": {
-              "x": 540,
-              "y": 180
+              "cell": "c8260081-3997-4d6b-b90c-e54dd66cb5d0"
             },
             "target": {
-              "cell": "87b3f3a5-1b7a-42d2-a193-f4dc7d63d888",
-              "port": "2ee520f4-544b-4c4c-8155-60bb49d202df"
-            }
+              "x": 760,
+              "y": 180
+            },
+            "vertices": []
           }
         ]
       }
