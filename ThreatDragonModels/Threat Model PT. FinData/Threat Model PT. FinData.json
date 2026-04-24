@@ -136,12 +136,12 @@
           },
           {
             "position": {
-              "x": 350,
-              "y": 130
+              "x": 340,
+              "y": 115
             },
             "size": {
-              "width": 240,
-              "height": 130
+              "width": 300,
+              "height": 160
             },
             "attrs": {
               "text": {
@@ -301,13 +301,60 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "bc87c783-3907-4886-a4f0-0751ecc91e0f",
+            "source": {
+              "x": 570,
+              "y": 190
+            },
+            "target": {
+              "x": 790,
+              "y": 190
+            },
+            "vertices": []
+          },
+          {
             "position": {
-              "x": 800,
-              "y": 165
+              "x": 840,
+              "y": 150
             },
             "size": {
-              "width": 120,
-              "height": 60
+              "width": 140,
+              "height": 80
             },
             "attrs": {
               "text": {
