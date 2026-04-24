@@ -818,8 +818,8 @@
                 "text": "Akses ke Server"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -916,12 +916,41 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "931be31b-0332-4607-ac56-c6b6726a64e6",
+                  "title": "Malware dari USB mengubah atau merusak data pada server",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "Petugas memasukkan USB yang berisi malware ke dalam server, sehingga memungkinkan terjadinya perubahan, manipulasi, atau kerusakan pada data dan sistem tanpa otorisasi.",
+                  "mitigation": "Mengamankan ruang server (kunci otomatis, biometrik)\nCCTV dan alarm keamanan\nMelarang perangkat eksternal (USB) masuk ke ruang server",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "95%"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1049,24 +1078,37 @@
               "storesInventory": false,
               "threats": [
                 {
-                  "id": "590a0de0-bdfd-420d-8db4-7adbfca70a2c",
-                  "title": "Malware Injection via USB causing data/system modification",
+                  "id": "73f0600f-5f6b-43a4-8909-a78f08f214e1",
+                  "title": "Data Nasabah Bocor",
                   "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Nonaktifkan atau batasi penggunaan USB (device control / endpoint protection)\nGunakan application whitelisting (hanya software tertentu yang boleh jalan)\nInstall dan update anti-malware / EDR di server\nTerapkan port security / USB blocking policy",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "Akses tidak sah ke server dapat menyebabkan data nasabah yang bersifat rahasia terekspos atau dicuri oleh pihak yang tidak berwenang.",
+                  "mitigation": "Menerapkan RBAC (Role-Based Access Control)\nPrinsip least privilege\nPembatasan akses hanya untuk user berwenang",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 1,
-                  "score": ""
+                  "number": 4,
+                  "score": "100%"
+                },
+                {
+                  "id": "9bcff7b5-e480-4df6-be82-f08ad1f954d5",
+                  "title": "Malware menyebabkan server mengalami gangguan",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Serangan malware atau aktivitas berbahaya dapat menyebabkan server menjadi tidak tersedia atau mengalami gangguan layanan sehingga tidak dapat digunakan oleh pengguna.",
+                  "mitigation": "Monitoring performa server secara real-time\nSistem backup & recovery\nMekanisme failover / redundancy\nIsolasi sistem yang terinfeksi saat insiden",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": "95%"
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 1,
                 "repudiation": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0
+                "informationDisclosure": 1,
+                "denialOfService": 1
               }
             }
           },
@@ -1410,76 +1452,6 @@
             "target": {
               "x": 1530,
               "y": 70
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             }
           }
         ]
@@ -1487,6 +1459,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 5
   }
 }
