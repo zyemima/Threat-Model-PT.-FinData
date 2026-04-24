@@ -376,6 +376,58 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "d106f271-9075-4fd3-b7a6-07a9500b9e7e",
+            "source": {
+              "x": 1998,
+              "y": 115
+            },
+            "target": {
+              "x": 2220,
+              "y": 120
+            },
+            "vertices": [
+              {
+                "x": 2090,
+                "y": 115
+              }
+            ]
+          },
+          {
             "position": {
               "x": 840,
               "y": 150
@@ -917,7 +969,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Malware masuk ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -931,7 +983,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Malware masuk"
             ],
             "id": "79269199-5442-4f2b-808d-79da1d9cf555",
             "source": {
@@ -948,6 +1000,126 @@
                 "y": 115
               }
             ]
+          },
+          {
+            "position": {
+              "x": 2170,
+              "y": 50
+            },
+            "size": {
+              "width": 250,
+              "height": 140
+            },
+            "attrs": {
+              "text": {
+                "text": "Monitoring & Logging"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e266968a-943c-480a-b983-b96121d7729a"
+                },
+                {
+                  "group": "right",
+                  "id": "8d298237-a7f3-4b2d-851c-503b33325db4"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f964674e-97cc-49e8-9e61-c05acf8c59c1"
+                },
+                {
+                  "group": "left",
+                  "id": "d4b3dddb-029f-4eab-9837-788f7a4ef83c"
+                }
+              ]
+            },
+            "id": "1963ea49-7ce9-4a38-bf35-c5836a0cbee2",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Process",
+              "name": "Monitoring & Logging ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
           }
         ]
       }
